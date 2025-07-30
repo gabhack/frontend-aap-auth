@@ -1,3 +1,9 @@
 <div class="maincontent">
     <h1>Welcome!!</h1>
-</div>
+    <button (click)="loadUsers()">Cargar usuarios</button>
+    <ul>
+      <li *ngFor="let u of users">
+        {{ u.email }}
+      </li>
+    </ul>
+  </div>
